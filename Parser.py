@@ -115,3 +115,4 @@ class Parser:
 		if (self.lexer.sym != Lexer.EOF):
 			self.error("Invalid statement syntax")
 		return node
+		
