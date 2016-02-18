@@ -1,9 +1,9 @@
 # Compiler(Python).
 Simple compiller based on Tiny-C. 
+## Menu
 
-* Menu
-  * [Abilities](#Abilities)
-    * [Syntax](#Syntax)
+  * [Abilities](##Abilities)
+    * [Syntax](##Syntax)
   * Uses
     * [Lexer](###Lexical-analysis)
     * [Parser](##Parser)
