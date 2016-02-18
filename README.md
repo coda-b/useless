@@ -10,8 +10,6 @@ Simple compiller based on Tiny-C.
     * [Machine code](##Machine-code)
     * [Compiler](##Compiler)
     * [What's next?](##What's-next?)
-  
----
 
 ## Abilities
 - One type of variables - int.
