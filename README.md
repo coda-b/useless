@@ -1,7 +1,4 @@
 # Compiler(Python).
-
----
-
 Simple compiller based on Tiny-C. 
 
 ## Menu
