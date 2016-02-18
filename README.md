@@ -2,8 +2,8 @@
 Simple compiller based on Tiny-C. 
 
 ## Menu
-  * [Abilities](##Abilities)
-    * [Syntax](##Syntax)
+  * [Abilities](## Abilities)
+    * [Syntax](## Syntax)
   * Uses
     * [Lexer](###Lexical-analysis)
     * [Parser](##Parser)
