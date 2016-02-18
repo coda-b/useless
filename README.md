@@ -1,7 +1,7 @@
 # Compiler(Python).
 Simple compiller based on Tiny-C. 
-## Menu
 
+## Menu
   * [Abilities](##Abilities)
     * [Syntax](##Syntax)
   * Uses
@@ -9,8 +9,10 @@ Simple compiller based on Tiny-C.
     * [Parser](##Parser)
     * [Machine code](##Machine-code)
     * [Compiler](##Compiler)
+    * [What's next?](##What's-next?)
+---
 
-##Abilities
+## Abilities
 - One type of variables - int.
 - All variables is global and there are can be only 26 variables(a-z).
 - It supports only "+" and "-".
@@ -19,8 +21,9 @@ Simple compiller based on Tiny-C.
 
 There are no any arrays or functions.
 
-##Syntax
+## Syntax
 It is written in the [ENBF](https://en.wikipedia.org/wiki/Extended_Backus-Naur_Form) form.
+
 ```EBNF
 <program> ::= <statement>
 <statement> ::= "if" <paren-expr> <statement> |
@@ -48,7 +51,7 @@ I explain this approximately:
 - Term means number, variable or expressins in brackets.
 - Variables - letters from "a" to "z". Numbers is 0-9.
 
-###Lexical analysis
+### Lexical analysis
 These [lexical analyzer](https://en.wikipedia.org/wiki/Lexical_analysis) must to know:
 
 - Numbers.
@@ -114,7 +117,7 @@ class Lexer:
 ```
 And it also ignore spaces. It cheks current symbol whether it's specific symbol of these language, if not - whether if it's a number.
 
-##Parser
+## Parser
 It needs to built his own [hierarchy](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from current tokens like: 
 ```
 "if (a < 0) a = 5;"
@@ -245,7 +248,7 @@ class Parser:
 			self.error("Invalid statement syntax")
 		return node
 ```
-##Machine code
+## Machine code
 Here you can see bite-code of these virtual machine. It also uses [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)), because it's easier than register.
 
 - FETCH x - write x.
@@ -308,7 +311,7 @@ class VirtualMachine:
 				print '%c = %d' % (chr(i+ord('a')), var[i])
 ```
 
-##Compiler
+## Compiler
 Properly here the code:
 ```Python
 class Compiler:
@@ -380,5 +383,5 @@ class Compiler:
 			self.gen(HALT)
 		return self.program
 ```
-##What's next?
+## What's next?
 I going to complete these in a future, maybe.
