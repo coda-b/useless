@@ -21,7 +21,7 @@ Simple compiller based on Tiny-C.
 There are no any arrays or functions.
 
 ## Syntax
-It is written in the [ENBF](https://en.wikipedia.org/wiki/Extended_Backus-Naur_Form) form.
+It's written in the [ENBF](https://en.wikipedia.org/wiki/Extended_Backus-Naur_Form) form.
 
 ```EBNF
 <program> ::= <statement>
