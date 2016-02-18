@@ -1,6 +1,5 @@
 #!/kill/yourself/Compiler.py
 
-
 class Compiler:
 	
 	program = []
