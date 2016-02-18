@@ -1,6 +1,5 @@
 #!/kill/yourself/virtual.py
 
-
 class VirtualMachine:
 
 	def run(self, program):
