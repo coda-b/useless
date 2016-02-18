@@ -52,6 +52,7 @@ class Lexer:
 					self.error('Unknown identifier: ' + ident)
 			else:
 				self.error('Unexpected symbol: ' + self.ch)
+				
 
 class Node:
 	def __init__(self, kind, value = None, op1 = None, op2 = None, op3 = None):
