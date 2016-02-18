@@ -1,6 +1,5 @@
 #!/kill/yourself/Lexer.py
 
-
 class Lexer:
 
 	NUM, ID, IF, ELSE, WHILE, DO, LBRA, RBRA, LPAR, RPAR, PLUS, MINUS, LESS, \
