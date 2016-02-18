@@ -1,6 +1,8 @@
 # Compiler(Python).
 Simple compiller based on Tiny-C. 
 
+---
+
 ## Menu
   * [Abilities](##Abilities)
     * [Syntax](##Syntax)
