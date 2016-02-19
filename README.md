@@ -58,7 +58,7 @@ These [lexical analyzer](https://en.wikipedia.org/wiki/Lexical_analysis) must to
 - If, if/else, while, do/while.
 - Symbols: +, -, <, =, {}, ().
 - End of file.
-- 
+
 ```Python
 class Lexer:
 
