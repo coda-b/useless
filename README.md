@@ -1,16 +1,6 @@
 # Compiler(Python).
 Simple compiller based on Tiny-C. 
 
-## Menu
-  * [Abilities](##Abilities)
-    * [Syntax](##Syntax)
-  * Uses
-    * [Lexer](###Lexical-analysis)
-    * [Parser](##Parser)
-    * [Machine code](##Machine-code)
-    * [Compiler](##Compiler)
-    * [What's next?](##What's-next?)
-
 ## Abilities
 - One type of variables - int.
 - All variables is global and there are can be only 26 variables(a-z).
