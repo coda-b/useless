@@ -374,4 +374,4 @@ class Compiler:
 		return self.program
 ```
 ## What's next?
-I going to complete these in a future, maybe.
+I'm going to complete these in a future, maybe.
