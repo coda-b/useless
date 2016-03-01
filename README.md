@@ -55,15 +55,15 @@ class Lexer:
 	NUM, ID, IF, ELSE, WHILE, DO, LBRA, RBRA, LPAR, RPAR, PLUS, MINUS, LESS, \
 	EQUAL, SEMICOLON, EOF = range(16)
 
-	# специальные символы языка
+	# special symbols
 	SYMBOLS = { '{': LBRA, '}': RBRA, '=': EQUAL, ';': SEMICOLON, '(': LPAR,
 		')': RPAR, '+': PLUS, '-': MINUS, '<': LESS }
 
-	# ключевые слова
+	# keywords
 	WORDS = { 'if': IF, 'else': ELSE, 'do': DO, 'while': WHILE }
 
-	# текущий символ, считанный из исходника
-	ch = ' ' # допустим, первый символ - это пробел
+	# current symbols which is written from source file
+	ch = ' ' # for example - first symbol is space
 
 	def error(self, msg):
 		print 'Lexer error: ', msg
@@ -154,7 +154,7 @@ class Parser:
 		else:
 			return self.paren_expr()
 
-	def summa(self):
+	def sum(self):
 		n = self.term()
 		while self.lexer.sym == Lexer.PLUS or self.lexer.sym == Lexer.MINUS:
 			if self.lexer.sym == Lexer.PLUS:
@@ -166,7 +166,7 @@ class Parser:
 		return n
 
 	def test(self):
-		n = self.summa()
+		n = self.sum()
 		if self.lexer.sym == Lexer.LESS:
 			self.lexer.next_tok()
 			n = Node(Parser.LT, op1 = n, op2 = self.summa())
