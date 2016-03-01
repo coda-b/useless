@@ -55,15 +55,15 @@ class Lexer:
 	NUM, ID, IF, ELSE, WHILE, DO, LBRA, RBRA, LPAR, RPAR, PLUS, MINUS, LESS, \
 	EQUAL, SEMICOLON, EOF = range(16)
 
-	# special symbols
+	# special symbols.
 	SYMBOLS = { '{': LBRA, '}': RBRA, '=': EQUAL, ';': SEMICOLON, '(': LPAR,
 		')': RPAR, '+': PLUS, '-': MINUS, '<': LESS }
 
-	# keywords
+	# keywords.
 	WORDS = { 'if': IF, 'else': ELSE, 'do': DO, 'while': WHILE }
 
 	# current symbols which is written from source file
-	ch = ' ' # for example - first symbol is space
+	ch = ' ' # for example - first symbol is space.
 
 	def error(self, msg):
 		print 'Lexer error: ', msg
